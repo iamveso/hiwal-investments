@@ -37,20 +37,24 @@ h2 em {
     display: grid;
     place-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .mdImage {
+    display: block;
     width: 100%;
-    max-width: 320px;      /* whatever fits your layout */
+    max-width: 320px;
+    height: auto;
 }
 
-.md div {
+.mdCaption {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     font: 12px Inter;
     color: white;
+    text-align: center;
 }
 .md small {
     display: block;
@@ -107,6 +111,16 @@ h2 em {
         gap: 28px;
     }
     .md {
-        height: 280px;
+        height: auto;
+        min-height: 0;
+        justify-items: center;
+        align-items: end;
+        padding-top: 8px;
+    }
+    .mdImage {
+        max-width: min(320px, 100%);
+    }
+    .mdCaption {
+        bottom: 18px;
     }
 }
