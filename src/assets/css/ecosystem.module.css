@@ -1,0 +1,103 @@
+.diagram,
+.grid,
+.aud {
+    padding: 95px max(30px, calc((100vw - 1100px) / 2));
+}
+.diagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+.diagram span,
+.aud > span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #1a6b6b;
+    font-weight: bold;
+}
+.diagram h2,
+.aud h2 {
+    font-size: 46px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+.diagram em,
+.aud em {
+    font-family: Georgia;
+    font-weight: 400;
+}
+.diagram p {
+    line-height: 1.7;
+    color: #5b666e;
+}
+.grid {
+    background: #e8e6e1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+.grid article {
+    background: #f8f6f1;
+    padding: 42px;
+    min-height: 260px;
+}
+.grid b {
+    color: #c9a227;
+    font-size: 12px;
+}
+.grid h3 {
+    font-size: 25px;
+}
+.grid p {
+    color: #657078;
+    line-height: 1.6;
+}
+.grid a {
+    font-size: 12px;
+    color: #0a1628;
+    font-weight: bold;
+    text-decoration: none;
+}
+.aud {
+    background: #0a1628;
+    color: #fff;
+}
+.aud h2 {
+    margin: 14px 0 38px;
+}
+.aud div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #344458;
+}
+.aud b {
+    padding: 20px 0;
+    border-bottom: 1px solid #344458;
+    color: #dce3e8;
+    font-size: 14px;
+}
+@media (max-width: 700px) {
+    .diagram,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .diagram,
+    .grid,
+    .aud {
+        padding: 65px 24px;
+    }
+    .diagram {
+        gap: 30px;
+    }
+    .diagram h2,
+    .aud h2 {
+        font-size: 36px;
+    }
+    .grid article {
+        padding: 30px;
+    }
+    .aud div {
+        grid-template-columns: 1fr;
+    }
+}

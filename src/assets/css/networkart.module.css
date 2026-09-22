@@ -1,0 +1,10 @@
+.networkArt {
+    width: min(590px, 100%);
+}
+svg {
+    width: 100%;
+    height: auto;
+}
+.compact {
+    width: 300px;
+}

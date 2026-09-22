@@ -1,0 +1,124 @@
+.hero {
+    background: #0a1628;
+    color: white;
+    padding: 95px max(30px, calc((100vw - 1100px) / 2));
+}
+.hero span,
+.contact span {
+    font-size: 11px;
+    color: #d8b64e;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.hero h1 {
+    font-size: clamp(45px, 6vw, 73px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    margin: 20px 0;
+}
+.hero em {
+    font-family: Georgia;
+    font-weight: 400;
+    color: #e2c45e;
+}
+.hero p {
+    max-width: 530px;
+    color: #c2cbd3;
+    line-height: 1.65;
+    font-size: 17px;
+}
+.contact {
+    padding: 95px max(30px, calc((100vw - 1100px) / 2));
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 90px;
+}
+.contact span {
+    color: #1a6b6b;
+}
+.contact h2 {
+    font-size: 40px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+.contact p {
+    line-height: 1.8;
+    color: #59656c;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    display: block;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #bcbcb8;
+    padding: 10px 10px;
+    font: 14px Inter;
+    margin-top: 6px;
+    color: #0a1628;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+.full {
+    grid-column: span 2;
+}
+
+button {
+    border: 0;
+    background: #c9a227;
+    color: #0a1628;
+    font-weight: bold;
+    padding: 15px 19px;
+    width: max-content;
+    font-size: 13px;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c9a227; /* your brand gold, standing in for the blue */
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 700px) {
+    .hero,
+    .contact {
+        padding: 65px 24px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+    .full {
+        grid-column: auto;
+    }
+}

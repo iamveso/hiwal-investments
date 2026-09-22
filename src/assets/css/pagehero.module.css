@@ -1,0 +1,71 @@
+.pagehero {
+    min-height: 330px;
+    background: #0a1628;
+    color: white;
+    padding: 42px max(32px, calc((100vw - 1176px) / 2)) 75px;
+    position: relative;
+    overflow: hidden;
+}
+.pagehero > div:first-child {
+    max-width: 720px;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8090a1;
+    margin-bottom: 36px;
+}
+.breadcrumb a {
+    color: #c9a227;
+    text-decoration: none;
+}
+.breadcrumb i {
+    font-style: normal;
+    margin: 0 7px;
+    color: #4d6172;
+}
+.eyebrow {
+    color: #d9ba53;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.pagehero h1 {
+    font-size: clamp(37px, 5vw, 60px);
+    line-height: 1.06;
+    letter-spacing: -2px;
+    margin: 15px 0 17px;
+}
+.pagehero p {
+    font-size: 17px;
+    color: #c5ced8;
+    line-height: 1.6;
+    max-width: 650px;
+}
+.orb {
+    position: absolute !important;
+    width: 430px;
+    height: 430px;
+    border: 1px solid #1a6b6b;
+    border-radius: 50%;
+    right: 6%;
+    top: -100px;
+    box-shadow:
+        0 0 0 42px #0d2335,
+        0 0 0 43px #1a6b6b;
+}
+@media (max-width: 600px) {
+    .pagehero {
+        padding: 32px 24px 55px;
+        min-height: 290px;
+    }
+    .breadcrumb {
+        margin-bottom: 28px;
+    }
+    .orb {
+        right: -220px;
+    }
+}

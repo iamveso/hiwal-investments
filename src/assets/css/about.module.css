@@ -1,0 +1,112 @@
+.intro,
+.split,
+.values {
+    padding: 100px max(30px, calc((100vw - 1100px) / 2));
+}
+.intro span,
+.split span,
+.values > span {
+    font-size: 11px;
+    color: #1a6b6b;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.intro h2 {
+    max-width: 850px;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+.intro em,
+h2 em {
+    font-family: Georgia;
+    font-weight: 400;
+}
+.split {
+    background: #e8e6e1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+.md {
+    height: 400px;
+    /*background: linear-gradient(130deg, #163044, #1a6b6b);*/
+    color: #d7b64b;
+    font: 140px Georgia;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.mdImage {
+    width: 100%;
+    max-width: 320px;      /* whatever fits your layout */
+}
+
+.md div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font: 12px Inter;
+    color: white;
+}
+.md small {
+    display: block;
+    color: #d7b64b;
+    text-transform: uppercase;
+    font-size: 9px;
+    margin-top: 5px;
+}
+.split h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+    margin: 13px 0;
+}
+.split p {
+    line-height: 1.7;
+    color: #4f5c65;
+}
+.values {
+    background: #0a1628;
+    color: white;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 35px;
+}
+.cards article {
+    background: #122239;
+    padding: 28px;
+    min-height: 190px;
+}
+.cards b {
+    color: #c9a227;
+    font-size: 12px;
+}
+.cards h3 {
+    font-size: 22px;
+}
+.cards p {
+    color: #b6c0c9;
+    line-height: 1.6;
+    font-size: 14px;
+}
+@media (max-width: 700px) {
+    .intro,
+    .split,
+    .values {
+        padding: 65px 24px;
+    }
+    .split,
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .md {
+        height: 280px;
+    }
+}

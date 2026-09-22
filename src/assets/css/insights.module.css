@@ -1,0 +1,114 @@
+.featured,
+.posts {
+    padding-left: max(30px, calc((100vw - 1100px) / 2));
+    padding-right: max(30px, calc((100vw - 1100px) / 2));
+}
+.featured {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: #e8e6e1;
+}
+.featured span,
+.posts span {
+    font-size: 10px;
+    color: #1a6b6b;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.featured h2 {
+    font-size: 53px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 15px 0;
+}
+.featured em {
+    font-family: Georgia;
+    font-weight: 400;
+}
+.featured p {
+    max-width: 480px;
+    color: #54616a;
+    line-height: 1.65;
+}
+.featured a,
+.posts a {
+    color: #0a1628;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.posts {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.posts .image {
+    height: 190px;
+    background: linear-gradient(125deg, #0a1628, #1a6b6b);
+    margin: 15px 0 22px;
+}
+.posts article:nth-child(2) .image {
+    background: linear-gradient(125deg, #c9a227, #795c12);
+}
+.posts h3 {
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 0;
+}
+.posts p {
+    font-size: 14px;
+    color: #667078;
+    line-height: 1.6;
+}
+
+.postsempty {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+    gap: 20px;
+}
+
+.postsempty svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.postsempty h3 {
+    font-size: 22px;
+    font-weight: 650;
+    color: #1a6b6b;
+    margin: 0;
+}
+
+.postsempty p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6b6b63;
+    max-width: 420px;
+    margin: 0;
+}
+@media (max-width: 700px) {
+    .featured,
+    .posts {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .featured {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .featured h2 {
+        font-size: 40px;
+    }
+    .posts {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+    }
+}
