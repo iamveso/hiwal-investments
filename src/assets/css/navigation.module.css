@@ -34,7 +34,8 @@
     align-items: center;
     /*border-radius: 50%;*/
 }
-.mark i {
+.brand > i {
+    display: none;
     position: absolute;
     width: 14px;
     height: 14px;
@@ -42,16 +43,16 @@
     border-radius: 50%;
     background: #f8f6f1;
 }
-.mark i:nth-child(1) {
+.brand > i:nth-child(1) {
     left: 0;
     top: 0;
 }
-.mark i:nth-child(2) {
+.brand > i:nth-child(2) {
     right: 0;
     top: 7px;
     border-color: #1a6b6b;
 }
-.mark i:nth-child(3) {
+.brand > i:nth-child(3) {
     left: 4px;
     bottom: 0;
     border-color: #0a1628;
@@ -104,13 +105,19 @@ nav a.active:not(.navContact) {
     display: none;
     border: 0;
     background: none;
-    width: 35px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
 }
 .menu span {
     height: 2px;
     background: #0a1628;
     display: block;
-    margin: 6px 0;
+    width: 24px;
+    margin: 6px auto;
 }
 .logotext {
     font-size: 8px;
@@ -135,6 +142,7 @@ nav a.active:not(.navContact) {
         align-items: flex-start;
         gap: 18px;
         border-bottom: 1px solid #e8e6e1;
+        z-index: 1;
     }
     .menu {
         display: block;

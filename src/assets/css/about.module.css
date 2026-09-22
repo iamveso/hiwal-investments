@@ -31,7 +31,6 @@ h2 em {
 }
 .md {
     height: 400px;
-    /*background: linear-gradient(130deg, #163044, #1a6b6b);*/
     color: #d7b64b;
     font: 140px Georgia;
     display: grid;
